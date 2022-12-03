@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre a Escola</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+
+    body {
+      background-color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      margin-top: 1.6vw;
+    }
+
+    #vetor1 {
+      position: absolute;
+      top: 0;
+      right: 3;
+      z-index: -1000;
+    }
+
+    #div3 {
+      position: absolute;
+      top: 3vw;
+      left: 37vw;
+    }
+
+    #div3 > ul > a > li {
+      margin-left: 4rem;
+      color: #296aa2;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #div4 {
+      position: absolute;
+      width: 550px;
+      color: #787c9a;
+      top: 15vw;
+      right: 5vw;
+      text-align: right;
+      font-size: 1.3rem;
+    }
+
+    #div5 {
+      position: absolute;
+      top: 10vw;
+      left: 5vw;
+    }
+
+    #div6 {
+      position: absolute;
+      width: 550px;
+      color: #787c9a;
+      top: 54vw;
+      left: 5vw;
+      text-align: left;
+      font-size: 1.3rem;
+    }
+
+    #div7 {
+      position: absolute;
+      top: 50vw;
+      right: 5vw;
+    }
+
+    #cta-saiba-mais {
+      position: absolute;
+      left: 0;
+    }
+
+    #div2 > img {
+      margin-left: 5.9rem;
+      width: 170px;
+    }
+
+    #section2 {
+      position: absolute;
+      top: 100vw;
+    }
+
+    #unesco {
+      position: absolute;
+      top: 10vw;
+    }
+
+    #cmdca {
+      position: absolute;
+      top: 18vw;
+      left: 10vw;
+    }
+
+    #cebas {
+      position: absolute;
+      top: 25vw;
+      left: 0vw;
+    }
+
+    #cta-confira-aqui {
+      position: absolute;
+      top: 34vw;
+    }
+
+    #vetor2 {
+      position: absolute;
+      top: 0vw;
+      left: 38vw;
+      z-index: -1000;
+    }
+
+    #div8 {
+      position: absolute;
+      left: 5vw;
+      top: 4vw;
+      width: 550px;
+      color: #787c9a;
+    }
+
+    #div9 {
+      position: absolute;
+      left: 48vw;
+      top: 4vw;
+      width: 800px;
+    }
+
+    #section3 {
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+      top: 205vw;
+      margin: 0 10vw;
+    }
+
+    #section4 {
+      color: #787c9a;
+      text-align: center;
+      position: absolute;
+      top: 250vw;
+      width: 846px;
+      margin: 0 15vw;
+    }
+
+    #section4 > img {
+      width: 800px;
+      position: absolute;
+      top: 26vw;
+      left: 1.5vw;
+    }
+
+    #txt2-section4 {
+      position: absolute;
+      top: 56.5vw;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #296aa2;
+      color: white;
+      display: flex;
+      position: absolute;
+      top: 344vw;
+      height: 60px;
+    }
+
+    footer > img {
+      position: absolute;
+      left: 12vw;
+      width: 12%;
+      top: 1vw;
+    }
+
+    #imag {
+      margin-top: 0.6vw;
+      margin-left: 75%;
+      justify-content: center;
+    }
+
+    #nomes {
+      width: 30%;
+      position: absolute;
+      left: 35%;
+      top: 1.5vw;
+      justify-content: center;
+    }
+    footer > div > ul > li {
+      margin-left: 30px;
+    }
+
+    #div10 {
+      display: flex;
+      justify-content: center;
+      margin: 0 70vw;
+    }
+
+    .container {
+      position: absolute;
+      top: 314vw;
+      text-align: center;
+      margin: 4vw;
+    }
+
+    .resposta {
+      color: #787c9a;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div id="div1">
+        <img src="imagens/vetor 1.png" alt="" id="vetor1" />
+      </div>
+
+      <div id="div2">
+        <img src="imagens/logo azul.png" alt="logo" />
+      </div>
+
+      <div id="div3">
+        <ul>
+          <a href="../Home/home.html">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li style="font-weight: 800">SOBRE A ESCOLA</li>
+          </a>
+          <a href="#">
+            <li>Acadêmico</li>
+          </a>
+          <a href="#">
+            <li>Admissão</li>
+          </a>
+          <a href="#">
+            <li>Governança</li>
+          </a>
+          <a href="#">
+            <li>Notícias</li>
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="div5">
+        <img src="imagens/img1.png" alt="" width="455px" />
+      </div>
+
+      <div id="div4">
+        <p style="color: #296aa2; font-size: 40px; font-weight: 800">
+          Sobre a Escola
+        </p>
+        <br />
+        <p>
+          Bem vindos a <span style="font-weight: 700">Germinare</span>!
+          <br /><br />
+          Nossa escola tem como principal objetivo formar, e não só formar , mas
+          sim dar estrutura e suporte para os maiores e melhores naquilo que se
+          propoem a fazer, seja como pessoa ou na vida profissional.
+          <br /><br />
+          Aqui também levamos muito a sério nossos valores e interesses e para
+          isso ser possivel, além de todos os esforços dos nossos alunos
+          contamos também com a colaboração e participação dos pais e/ou
+          responsáveis, independentemente do ano que o filho(a) ou de quem é
+          resposável está cursando, sendo assim foi criado o programa
+          <span style="font-weight: 700">Escola da Família</span> que direciona
+          os pais e responsáveis do 6° ao 1° Médio, mas tudo isso é claro sem
+          tirar a liberdade e a responsabilidade dos alunos.
+        </p>
+      </div>
+    </main>
+
+    <section>
+      <div id="div7">
+        <img src="imagens/img2.png" alt="" width="455px" />
+      </div>
+
+      <div id="div6">
+        <p style="color: #296aa2; font-size: 40px; font-weight: 800">
+          Escola da Família
+        </p>
+        <br />
+        <p>
+          E a final quem ou o que é a escola da Família? <br /><br />
+          Como citado, o projeto
+          <span style="font-weight: 700">Escola da Família</span> foi criado
+          para ajudar país e responsáveis a como apoiar seus filho(as) nessa
+          caminhada para construção do seu futuro, em
+          <span style="font-weight: 700">2022</span> nosso primeiro ano de
+          atuação podemos contar com diversas palestras e atividades por nossa
+          plataforma, e claro sempre contando também com a nossa diretora
+          <span style="font-weight: 700">Maria Odette</span> e toda nossa equipe
+          que está aqui sempre nos apoiando.
+        </p>
+        <br /><br />
+
+        <a href=""
+          ><img
+            src="imagens/cta saiba-mais.png"
+            alt=""
+            width="200px"
+            id="cta-saiba-mais"
+        /></a>
+      </div>
+    </section>
+
+    <section id="section2">
+      <div id="div8">
+        <p style="color: #296aa2; font-size: 40px; font-weight: 800">
+          CERTIFICADOS
+        </p>
+        <p>Conheça um pouco dos nossos certifcados!</p>
+        <br /><br /><br />
+
+        <img src="imagens/unesco.png" alt="" width="120px" id="unesco" />
+        <img src="imagens/cmdca.png" alt="" width="120px" id="cmdca" />
+        <img src="imagens/cebas.png" alt="" width="120px" id="cebas" />
+        <br /><br /><br />
+        <a href="#"
+          ><img
+            src="imagens/cta confira-aqui.png"
+            alt=""
+            width="200px"
+            id="cta-confira-aqui"
+        /></a>
+      </div>
+
+      <div id="div9">
+        <img src="imagens/txt cmdca.png" alt="" width="300px" />
+        <img src="imagens/txt cebas.png" alt="" width="300px" />
+        <img src="imagens/txt upf.png" alt="" width="300px" />
+        <img src="imagens/txt unesco.png" alt="" width="300px" />
+      </div>
+
+      <img src="imagens/vetor 2.png" alt="" width="800px" id="vetor2" />
+    </section>
+
+    <section id="section3">
+      <p style="color: #296aa2; font-size: 30px; font-weight: 800">
+        Empresas do Grupo / Acadêmias
+      </p>
+
+      <img src="imagens/logo academias.png" alt="" width="1000px" />
+    </section>
+
+    <section id="section4">
+      <p style="color: #296aa2; font-size: 30px; font-weight: 800">Doações</p>
+      <br />
+      <p>
+        <span style="color: #fdaa4a">Amigo Germinare</span>
+        <br /><br />
+        O desafio da Escola Germinare é tornar-se uma
+        <span style="font-weight: 600">referência no setor da educação</span>, a
+        partir da excelência na qualidade, proposta acadêmica diferenciada e de
+        sua missão em formar jovens administradores de empresas e cidadãos.
+        Neste sentido, a escola convida pessoas e empresas que acreditam no
+        poder da educação para fazerem parte deste legado! <br /><br />
+        <span style="color: #fdaa4a">Como apoiar?</span>
+        <br /><br />
+        1) Faça sua doação para a Escola Germinare direto do seu celular através
+        do PicPay usando seu cartão de crédito ou saldo no aplicativo. Acesse o
+        PicPay
+        <br /><br />
+        Caso queira doar mensalmente, procure por @doegerminare e faça sua
+        contribuição mensal, a partir de R$10,00/mês.
+      </p>
+
+      <img src="imagens/qr code.png" alt="" />
+
+      <p id="txt2-section4">
+        2) Caso prefira, você pode fazer uma doação diretamente na conta
+        corrente da escola. Para isso, entre em contato através do e-mail
+        instituto@germinare.org.br. No caso de doações de Pessoa Jurídica,
+        pedimos a gentileza de nos contatar através do e-mail mencionado acima.
+      </p>
+    </section>
+
+    <div class="container">
+      <p style="color: #296aa2; font-size: 30px; font-weight: 800">
+        Dúvidas Frequentes
+      </p>
+      <br />
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapse1"
+                >Pergunta 1</a
+              >
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body resposta">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapse2"
+                >Pergunta 2</a
+              >
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body resposta">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a
+                data-toggle="collapse"
+                data-parent="#accordion"
+                href="#collapse3"
+                >Pergunta 3</a
+              >
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body resposta">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="imagens/logo branco.png" alt="logo" />
+      <div id="nomes">
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Email</li>
+          <li>WhatsApp</li>
+        </ul>
+      </div>
+
+      <div id="imag">
+        <a href="#"
+          ><img src="imagens/whatsapp.png" alt="WhatsApp" width="40px"
+        /></a>
+        <a href="#"
+          ><img src="imagens/Facebook.png" alt="Facebook" width="45px"
+        /></a>
+        <a href="#"><img src="imagens/email.png" alt="Email" width="40px" /></a>
+        <a href="#"
+          ><img src="imagens/linkedin.png" alt="Linkedin" width="40px"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>

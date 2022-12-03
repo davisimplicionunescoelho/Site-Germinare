@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GerminaTech</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@keyframes go-back {
+    from {
+        transform: translateX(50px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes float{
+	0%,100%{
+		transform:translatey(0)
+	}
+	50%{
+		transform:translatey(-20px)
+	}
+}
+.efeito-flutuante-infinito {
+     animation: float 4s ease-in-out infinite;
+}
+
+@media (max-width: 400px){
+    #section4 {
+        column-count: 2;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40%;
+}
+main
+
+.hexagono {
+    display: flex;
+    animation: go-back 4s;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#section1 {
+    margin-top: 10%;
+}
+
+#img-main {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 90%;
+}
+
+#img1 {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+
+#img2 {
+    position: absolute;
+    left: 40%;
+    top: 100%;
+}
+
+#img3 {
+    position: absolute;
+    top: 120%;
+    left: 70%;
+}
+
+#img4 {
+    position: absolute;
+    left: 40%;
+    top: 150%;
+}
+
+#img5 {
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    z-index: -1000;
+}
+
+#p1 {
+    position: absolute;
+    top: 250%;
+    left: 1%;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    z-index: 1000;
+    width: 100%;
+}
+
+#section3 > div > img{
+    max-width: 100%;
+}
+
+#section3 {
+    max-width: 70%;
+    margin: 0 auto;
+    column-count: 2;
+    position: absolute;
+    top: 280%;
+    display: flex;
+    column-gap: 40%;
+    row-gap: 10%;
+    left: 5%;
+}
+
+.textoFotos{
+    display: flex;
+    align-items: center;
+    column-gap: 2vw
+}
+
+#section4 > div > img{
+    display: block;
+    max-width: 100%;
+}
+
+#section4 {
+    max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        position: absolute;
+        top: 440%;
+        left: 5%;
+}
+
+#alunos-tech {
+    color: black;
+    font-size: 40px;
+    position: absolute;
+    top: 430%;
+}
+
+#section4 > div {
+    margin-left: 10%;
+}
+    #col1 > img{
+    margin-top: 10%;    
+}
+#col2 > img{
+    margin-top: 20%;
+}
+#col3 > img{
+    margin-top: 10%;
+}
+
+footer > div > img {
+    position: absolute;
+    top: 170vw;
+    z-index: -1000;
+    left: 0;
+    width: 100%;
+}
+
+#img1-footer {
+    position: absolute;
+    top: 290vw;
+    left: 45%;
+    z-index: -1000;
+    width: 15%;    
+}
+
+footer > div + div + div > img {
+    position: absolute;
+    top: 400%;
+    z-index: -1000;
+    left: 5rem;
+    width: 12rem;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2rem;
+
+}
+
+#img2-footer{
+    position: absolute;
+    top: 308vw;
+    z-index: -1000;
+    left: 8%;
+    width: 15%;
+}
+
+footer > div + div + div > ul {
+    position: absolute;
+    top: 308.8vw;
+    z-index: -1000;
+    left: 28%;
+}
+
+footer > div + div + div > div {
+    display: flex;
+    position: absolute;
+    top: 693%;
+    z-index: -1000;
+    left: 78%;
+}
+
+footer > div + div + div > div > a{
+    margin: 0 2%;
+}
+
+.verde{
+    color: #3CB65F;
+}
+
+</style>
+
+<body>
+
+    <header>
+        <img src="imagens/logo.png" alt="GerminaTech" width="878px" id="img1">
+    </header>
+    
+    <main>
+        <div id="div1">
+            <img src="imagens/icons todos.png" alt="" class="hexagono" id="img-main">
+    </main>
+
+    <section id="section1">
+        <img src="imagens/plataformas.png" alt="" width="357px" id="img2" class="efeito-flutuante-infinito">
+
+        <img src="imagens/materias.png" alt="" width="357px" id="img3" class="efeito-flutuante-infinito">
+        
+        <img src="imagens/valores.png" alt="" width="357px" id="img4" class="efeito-flutuante-infinito">
+    </section>
+
+    <section id="section2">
+        <img src="imagens/Vector1.png" alt="" id="img5">
+      <p id="p1">
+            Conheça nossa equipe <span style="color: #3CB65F;font-family: 'Tomorrow', sans-serif; font-size: 50px ;margin-left: 3vw;">GerminaTech</span>
+        </p>
+    </section>
+
+    <section id="section3">
+        <div class="fotos">
+            <div class="textoFotos"><img src="imagens/raul.png" alt="">
+            <h1>Diretor de negócios</h1>
+            </div>
+           <div class="textoFotos"><img src="imagens/paulo.png" alt="">
+           <h1>Gerente de Projetos</h1></div>
+            <div class="textoFotos"><img src="imagens/santi.png" alt="">
+            <h1 class="verde">Especialista em Programação</h1></div>
+        </div>
+
+        <div >
+            <div class="textoFotos"><img src="imagens/odette.png" alt="">
+            <h1 class="verde">Diretora Pedagógica</h1></div>
+            <div class="textoFotos"><img src="imagens/grilo.png" alt="">
+            <h1 class="verde">Especialista em Programação</h1></div>
+            <div class="textoFotos"><img src="imagens/modolo.png" alt="">
+            <h1 class="verde">Especialista em Programação</h1></div>
+        </div>
+    </section>
+
+    <p id="alunos-tech">
+        Nossos Alunos da <span style="font-family: 'Tomorrow'; font-size: 50px;margin-left: 3vw; color: #3CB65F;">GerminaTech</span>
+    </p>
+
+    <section id="section4">
+        <div id="col1">
+            <img src="imagens/img1.png" alt="" width="350px">
+            <img src="imagens/img2.png" alt="" width="350px">
+            <img src="imagens/img3.png" alt="" width="350px">
+        </div>
+        <div id="col2">
+            <img src="imagens/img4.png" alt="" width="350px">
+            <img src="imagens/img5.png" alt="" width="350px">
+            <img src="imagens/img6.png" alt="" width="350px">
+        </div>
+        <div id="col3">
+            <img src="imagens/img7.png" alt="" width="350px">
+            <img src="imagens/img8.png" alt="" width="350px">
+            <img src="imagens/img9.png" alt="" width="350px">
+        </div>
+    </section>
+
+    <footer>
+
+        <div>
+            <img src="imagens/fundo footer.png" alt="">
+        </div>
+
+        <div>
+            <a href="https://techadmissionfront.z13.web.core.windows.net/tech"><img src="imagens/cta-vejamais.png" alt="" id="img1-footer"></a>
+        </div>
+
+        <div>
+            <img src="imagens/LOGO TECH FOOTER.png" alt="logo" id="img2-footer">
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Email</li>
+                <li>WhatsApp</li>
+            </ul>
+
+            <div>
+                <a href=""><img src="imagens/whatsapp.png" alt="WhatsApp" width="46px"></a>
+                <a href=""><img src="imagens/Facebook.png" alt="Facebook" width="46px"></a>
+                <a href=""><img src="imagens/email.png" alt="Email" width="46px"></a>
+                <a href=""><img src="imagens/linkedin.png" alt="Linkedin" width="46px"></a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>

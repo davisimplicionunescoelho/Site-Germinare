@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Instituto Germinare</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+      }
+
+      body {
+        background-color: white;
+        overflow-x: hidden;
+      }
+
+      header {
+        display: flex;
+        margin-top: 1.6vw;
+      }
+
+      #div1 {
+        position: absolute;
+        top: 0vw;
+        right: 0vw;
+      }
+
+      #div2 > img {
+        margin-left: 5rem;
+        width: 60%;
+      }
+
+      ul {
+        display: flex;
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      #div3 {
+        position: absolute;
+        top: 3vw;
+        left: 25vw;
+      }
+
+      #div3 > ul > li {
+        margin-left: 4rem;
+        color: #296aa2;
+      }
+
+      #div4 {
+        position: absolute;
+        top: 8vw;
+        right: 5vw;
+      }
+
+      .search-container {
+        width: 400px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      input#search-bar {
+        margin: 0 auto;
+        width: 100%;
+        height: 45px;
+        padding: 0 20px;
+        font-size: 1rem;
+        border: 1px solid #f5f5f5;
+        outline: none;
+        border-radius: 20px;
+        opacity: 0.7;
+      }
+
+      .search-container:focus {
+        border: 1px solid #000000;
+        transition: 0.35s ease;
+        color: #000000;
+      }
+
+      #search-container::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      #search-container::-moz-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      #search-container:-ms-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      .search-icon {
+        position: relative;
+        float: right;
+        width: 75px;
+        height: 75px;
+        top: -62px;
+        right: -45px;
+      }
+
+      main {
+        position: absolute;
+        top: 16vw;
+        left: 6vw;
+      }
+
+      main > a {
+        position: absolute;
+        left: 5vw;
+      }
+
+      #section1 > div > img {
+        display: block;
+        max-width: 100%;
+      }
+
+      #section1 > div {
+        margin: 0 3vw;
+      }
+
+      #section1 {
+        max-width: 70%;
+        margin: 0 auto;
+        column-count: 3;
+        position: absolute;
+        top: 60vw;
+        margin: 0 21vw;
+      }
+
+      #section2 > div > img {
+        display: block;
+        max-width: 100%;
+      }
+
+      #section2 > div {
+        margin: 0 3vw;
+      }
+
+      #section2 {
+        max-width: 70%;
+        margin: 0 auto;
+        column-count: 2;
+        position: absolute;
+        top: 80vw;
+        margin: 0 30%;
+      }
+
+      #div5 {
+        position: absolute;
+        top: 110vw;
+        left: 32.8vw;
+      }
+
+      #div6 > div > img {
+        display: block;
+        max-width: 100%;
+      }
+
+      #div6 {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        position: absolute;
+        top: 120vw;
+        left: 5%;
+      }
+
+      #div6 > div {
+        margin-left: 10%;
+      }
+
+      #col1 > img {
+        margin-top: 10%;
+      }
+      #col2 > img {
+        margin-top: 20%;
+      }
+      #col3 > img {
+        margin-top: 10%;
+      }
+      li > a {
+        text-decoration: none;
+        color: #296aa2;
+      }
+      #contatos {
+        width: 10%;
+        text-align: center;
+        margin-left: 33%;
+        margin-top: 190%;
+      }
+      #mapa > iframe {
+        width: 40%;
+        align-items: flex-start;
+      }
+      #mapa {
+        width: 85%;
+        margin-left: 15%;
+        border-radius: 50px;
+        display: flex;
+        margin-top: 4%;
+        column-gap: 2%;
+      }
+      #informacao {
+        background-color: #f5f5f5;
+        border-radius: 5%;
+        width: 40%;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+      }
+      #informacao > p {
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 5%;
+        line-height: 150%;
+      }
+      #tel {
+        width: 100%;
+        display: flex;
+        margin: 5%;
+      }
+      #tel > p {
+        font-size: 600;
+        margin-top: 2%;
+        margin-left: 2%;
+      }
+      #formulario {
+        display: flex;
+        top: 5vw;
+        width: 100%;
+        text-align: center;
+      }
+
+      #forms {
+        margin: 0 18vw;
+      }
+
+      #forms > img {
+        width: 800px;
+      }
+
+      #email {
+        width: 90%;
+        height: 120px;
+        margin-top: 6vw;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        background-color: #f5f5f5;
+        align-items: center;
+        border-radius: 2px;
+      }
+      #email > h1 {
+        padding-top: 20px;
+        margin-left: 20px;
+      }
+      #email > div > div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 1%;
+        line-height: 130%;
+      }
+      #emails {
+        display: flex;
+      }
+
+      #submeter {
+        background-color: #2c4f93;
+        width: 140px;
+        height: 54px;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+        border: none;
+        position: absolute;
+        top: 282.5vw;
+        left: 31.8vw;
+      }
+
+      #formularios1 {
+        position: absolute;
+        top: 269.4vw;
+        left: 25.6vw;
+        border-radius: 16px;
+        font-size: 18px;
+        width: 282px;
+        height: 44px;
+      }
+
+      #formularios1 > label > input {
+        width: 282px;
+        height: 44px;
+        border-radius: 16px;
+      }
+
+      #formularios2 {
+        position: absolute;
+        top: 276.5vw;
+        left: 25.6vw;
+        width: 282px;
+        height: 44px;
+        border-radius: 16px;
+        font-size: 18px;
+      }
+
+      #formularios2 > label > input {
+        width: 282px;
+        height: 44px;
+        border-radius: 16px;
+      }
+
+      footer {
+        width: 100%;
+        background-color: #296aa2;
+        color: white;
+        display: flex;
+        position: absolute;
+        top: 310vw;
+        height: 60px;
+      }
+
+      footer > img {
+        position: absolute;
+        left: 12vw;
+        width: 12%;
+        top: 1vw;
+      }
+
+      #imag {
+        margin-top: 0.6vw;
+        margin-left: 75%;
+        justify-content: center;
+      }
+
+      #nomes {
+        width: 30%;
+        position: absolute;
+        left: 35%;
+        top: 1.5vw;
+        justify-content: center;
+      }
+      footer > div > ul > li {
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div id="div1">
+        <img src="imagens/Vector.png" alt="" />
+      </div>
+
+      <div id="div2">
+        <img src="imagens/logo azul.png" alt="logo" />
+      </div>
+
+      <div id="div3">
+        <ul>
+          <li style="font-weight: 800">HOME</li>
+          <li><a href="../Sobre a Escola/Sobre a Escola.html">Sobre a Escola</a></li>
+          <li>Acadêmico</li>
+          <li style="color: white">Admissão</li>
+          <li style="color: white">Governança</li>
+          <li style="color: white">Notícias</li>
+        </ul>
+      </div>
+
+      <div id="div4">
+        <form class="search-container">
+          <input type="text" id="search-bar" placeholder="Pesquisar..." />
+          <a href="#"
+            ><img
+              class="search-icon"
+              src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
+          /></a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <p style="font-weight: 700; font-size: 50px; color: #296aa2">
+        Escola Germinare
+      </p>
+
+      <p style="font-size: 18px; color: #787c9a; font-weight: 400; width: 44vw">
+        <br /><br />
+        Você já conhece a nossa escola?
+        <br /><br />
+        Temos como intuito formar os maiores e melhores, começamos com a nossa
+        mais conhecida
+        <span style="color: #296aa2; font-weight: 600">Escola de Negócios</span>
+        em <span style="color: #296aa2; font-weight: 600">2010</span> que vem
+        gerando frutos e grandes tocadores de negócios de sucesso, e toda essa
+        estrutura é gerida pela
+        <span style="color: #296aa2; font-weight: 600">Maria Odette</span> nossa
+        diretora durante todos esses anos. <br /><br />
+        Hoje também contamos com a nossa escola de tecnologia a
+        <span style="color: #29e78d; font-family: 'Tomorrow', sans-serif"
+          >GerminaTech</span
+        >
+        que teve sua primeira turma iniciando no ano de
+        <span style="color: #296aa2; font-weight: 600">2022</span> gerida pelo
+        direto <span style="color: #296aa2; font-weight: 600">Raul</span> e pelo
+        coordenador
+        <span style="color: #296aa2; font-weight: 600">Paulo Vaz</span>.
+      </p>
+
+      <a
+        href="../Lading Page GerminaTech/germinatech.html"
+        title="conheça a germinaTech"
+      >
+        <img
+          style="width: 300px; margin-top: 20px"
+          src="imagens/cta-conheça-germinatech.svg"
+        />
+      </a>
+    </main>
+
+    <section id="section1">
+      <div><img src="imagens/Anapaula.png" alt="" width="275px" /></div>
+      <div><img src="imagens/Odette.png" alt="" width="275px" /></div>
+      <div><img src="imagens/Raul.png" alt="" width="275px" /></div>
+    </section>
+
+    <section id="section2">
+      <div><img src="imagens/Paulo.png" alt="" width="275px" /></div>
+      <div><img src="imagens/Léo.png" alt="" width="275px" /></div>
+    </section>
+
+    <section id="section3">
+      <div id="div5">
+        <p
+          style="
+            color: #296aa2;
+            font-weight: 600;
+            font-size: 36px;
+            width: 440px;
+            text-align: center;
+          "
+        >
+          Conheça um pouquinho do nosso espaço!
+        </p>
+      </div>
+
+      <div id="div6">
+        <div id="col1">
+          <img src="imagens/img1.png" alt="" width="350px" />
+          <img src="imagens/img2.png" alt="" width="350px" />
+        </div>
+        <div id="col2">
+          <img src="imagens/img3.png" alt="" width="350px" />
+          <img src="imagens/img4.png" alt="" width="350px" />
+        </div>
+        <div id="col3">
+          <img src="imagens/img5.png" alt="" width="350px" />
+          <img src="imagens/img6.png" alt="" width="350px" />
+        </div>
+      </div>
+    </section>
+
+    <div id="contatos">
+      <p
+        style="
+          color: #296aa2;
+          font-weight: bold;
+          font-size: 36px;
+          width: 440px;
+          text-align: center;
+        "
+      >
+        Contatos
+      </p>
+    </div>
+
+    <section id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.542669969322!2d-46.73398035019337!3d-23.
+        512976584631854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8dcf5efb1cd%3A0xcc322969008a3e57!
+        2sInstituto%20J%26F!5e0!3m2!1spt-BR!2sbr!4v1669980380929!5m2!1spt-BR!2sbr"
+        width="500"
+        height="450"
+        style="border: 1"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div id="informacao">
+        <p>
+          informações para contato com a <br />
+          escola e localização:
+        </p>
+
+        <div id="tel">
+          <img src="imagens/telefone-contato.png" alt="" />
+          <p>(11)3623-6000/(11)96479-9498</p>
+        </div>
+
+        <div id="tel">
+          <img src="imagens/email-contato.png" alt="" />
+          <p>
+            <a href="mailto:instituto@germinare.org.br"
+              >instituto@germinare.org.br</a
+            >
+          </p>
+        </div>
+
+        <div id="tel">
+          <img src="imagens/localizaçao" alt="" />
+          <p>R. Irineu José Bordon - Vila Jaguara, São Paulo</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulario">
+      <p
+        style="
+          color: #296aa2;
+          font-size: 24px;
+          font-weight: 800;
+          margin: 10vw 40vw 0;
+        "
+      >
+        FORMULÁRIO
+      </p>
+    </section>
+
+    <div id="forms">
+      <img src="imagens/forms.png" alt="formulário" />
+    </div>
+
+    <form id="formularios1">
+        <label for="name" aria-required="true">
+          <input type="name"/>
+        </label>
+      </form>
+
+    <form id="formularios2">
+      <label for="email" aria-required="true">
+        <input type="email"/>
+      </label>
+    </form>
+
+    <input type="submit" value="Enviar" id="submeter" />
+
+    <section id="email">
+      <h1>Email:</h1>
+      <div id="emails">
+        <div>
+          <p>Doação e Apoio:</p>
+          <p>instituto@germinare.org.br</p>
+        </div>
+        <div>
+          <p>Trabalhe conosco:</p>
+          <p>rh@germinare.org.br</p>
+        </div>
+        <div>
+          <p>Processo de Admissão:</p>
+          <p>admissão@germinare.org.br</p>
+        </div>
+        <div>
+          <p>Ouvidoria:</p>
+          <p>ouvidoria@germinare.org.br</p>
+        </div>
+        <div>
+          <p>Imprensa e Relações institucionais:</p>
+          <p>comunicacao@germinare.org.br</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <img src="imagens/logo branco.png" alt="logo" />
+      <div id="nomes">
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Email</li>
+          <li>WhatsApp</li>
+        </ul>
+      </div>
+
+      <div id="imag">
+        <a href="#"
+          ><img src="imagens/whatsapp.png" alt="WhatsApp" width="40px"
+        /></a>
+        <a href="#"
+          ><img src="imagens/Facebook.png" alt="Facebook" width="45px"
+        /></a>
+        <a href="#"><img src="imagens/email.png" alt="Email" width="40px" /></a>
+        <a href="#"
+          ><img src="imagens/linkedin.png" alt="Linkedin" width="40px"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
